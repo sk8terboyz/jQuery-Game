@@ -24,8 +24,12 @@ html {
     color: white;
 }
 
+a {
+    color: rgba(98, 89, 226, 0.719);
+}
+
 a:hover {
-    color: white;
+    color: rgb(98, 89, 226);
 }
 
 @media only screen and (min-width:800px) {
