@@ -19,22 +19,13 @@ html {
 }
 
 .navLink {
-    
-}
-
-#howTo {
     padding-right: 5%;
     padding-left: 5%;
+    color: white;
 }
 
-#allGames {
-    padding-right: 5%;
-    padding-left: 5%;
-}
-
-#explained {
-    padding-right: 5%;
-    padding-left: 5%;
+a:hover {
+    color: white;
 }
 
 @media only screen and (min-width:800px) {
