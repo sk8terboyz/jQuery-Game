@@ -10,3 +10,35 @@ html body {
 html {
     background-color: rgb(31, 30, 30);
 }
+
+.top-nav {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 2%;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+.navLink {
+    
+}
+
+#howTo {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+#allGames {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+#explained {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+@media only screen and (min-width:800px) {
+    #howTo {
+        width: 15%;
+    }    
+}
