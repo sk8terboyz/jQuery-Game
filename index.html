@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JQuery Based Game</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script  type='text/javascript' language='javascript' src=''></script>
+    <!-- import jQuery -->
+    <script  type='text/javascript' src='http://code.jquery.com/jquery-latest.min.js'></script>
     <section class="top-nav__container">
         <div class="top-nav">
-            <h2 id="howTo" class="navLink"><a href="">Creation</a></h2>
-            <h2 id="allGames" class="navLink"><a href="">Games List</a></h2>
-            <h2 id="explained" class="navLink"><a href="">How to Play</a></h2>
+            <h2 id="howTo" class="navLink"><a href="assets/pages/creation.html">Creation</a></h2>
+            <h2 id="allGames" class="navLink"><a href="assets/pages/games.html">Games List</a></h2>
+            <h2 id="explained" class="navLink"><a href="assets/pages/howTo.html">How to Play</a></h2>
+            <!-- Change this to an image or something that looks better than this -->
+            <h2 id="hints"><a>Hint</a></h2>
         </div>
         <!-- I want to make this have 3 buttons: 
             1) How to play (explain the concept and what the player must do)
@@ -23,11 +26,16 @@
 </head>
 <body>
     
-    <section class="sidebar__container">
-        This will be the sidebar
-        <!-- I want this to have hints for each game (preferrably a sidebar with an arrow at the top that allows it to be condensed) -->
+    <section class="hints__container">
+        <div class="hint-background">
+            <h4 id="hint-title"></h4>
+            <hr/>
+            <p id="hint-content">Temporary filler text to help with styling</p>
+            <button id="hint-close">Close</button>
+            <button id="hint-x">X</button>
+        </div>
     </section>
-    
+
     <section class="game-area__container">
         This is the game area
         <!-- This will be where the game will be play

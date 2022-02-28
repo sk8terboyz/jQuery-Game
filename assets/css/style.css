@@ -1,4 +1,4 @@
-
+/* Default styles (not all styles are meant for full-sized screens, media queries below are more likely to hold normal screen styling) */
 html body {
     width: 100%;
     height: 100%;
@@ -13,7 +13,7 @@ html {
 
 .top-nav {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     margin: 2%;
     font-size: clamp(1rem, 1.5vw, 2rem);
 }
@@ -26,14 +26,98 @@ html {
 
 a {
     color: rgba(98, 89, 226, 0.719);
+    cursor: pointer;
 }
 
 a:hover {
     color: rgb(98, 89, 226);
 }
 
+#hints {
+    position: absolute;
+    right: 15%;
+    top: 5%;
+    font-size: clamp(1vw, 3vw, 5vw);
+    width: 10%;
+}
+
+.hints__container {
+    display: none;
+}
+
+.hint-background {
+    position: absolute;
+    width: clamp(10%, 35%, 50%);
+    height: clamp(5%, 25%, 50%);
+    background-color: rgb(226, 226, 226);
+    left: 30%;
+    top: 30%;
+    display: flexbox;
+    border: 5px solid black;
+}
+
+#hint-title {
+    flex: 1;
+    text-align: center;
+    font-size: clamp(0.75rem, 1.8rem, 2.5rem);
+    margin: 1%;
+}
+
+#hint-content {
+    flex: 2;
+    text-align: center;
+    font-size: clamp(0.75rem, 1.5rem, 2rem);
+}
+
+#hint-close {
+    flex: 3;
+    width: 75px;
+    height: 25px;
+    font-size: large;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+#hint-x {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    cursor: pointer;
+}
+
+.game-area__container {
+    width: 90%;
+    height: 90vh;
+    margin-left: 5%;
+    background-color: black;
+}
+
+/* 800px and up will have these changes */
 @media only screen and (min-width:800px) {
     #howTo {
         width: 15%;
     }    
+}
+
+/* 560px and up will have these changes */
+@media only screen and (min-width:560px) {
+    #hints {
+        position: absolute;
+        left: 2%;
+        top: 2%;
+        font-size: clamp(1vw, 3vw, 5vw);
+    }
+    .top-nav {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 2%;
+        font-size: clamp(1rem, 1.5vw, 2rem);
+    }
+    
+    .navLink {
+        padding-right: 5%;
+        padding-left: 5%;
+        color: white;
+    }
 }
