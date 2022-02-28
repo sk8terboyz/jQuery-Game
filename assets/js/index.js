@@ -23,4 +23,6 @@ $("#hint-x").on("click", function() {
     $(".hints__container").fadeOut("slow");
 });
 
-
+$("#start-btn").on("click", function() {
+    alert("Game not finished");
+});

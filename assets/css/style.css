@@ -93,6 +93,30 @@ a:hover {
     background-color: black;
 }
 
+#game-title {
+    color: white;
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    font-size: clamp(1.5rem, 4vw, 5vw);
+}
+
+#start-btn {
+    font-size: clamp(1vw, 3vw, 5vw);
+    position: absolute;
+    left: 40%;
+    top: 60%;
+    background-color: transparent;
+    color: green;
+    border-color: green;
+}
+
+#start-btn:hover {
+    background-color: rgb(17, 16, 16);
+    cursor: pointer;
+    font-size: clamp(1.2vw, 3.2vw, 5.2vw);
+}
+
 /* 800px and up will have these changes */
 @media only screen and (min-width:800px) {
     #howTo {
